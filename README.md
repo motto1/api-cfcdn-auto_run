@@ -3,6 +3,7 @@
 
 2，可以通过修改yml的cron来更改自动执行时间
 
+3，开启action触发自动执行
 
 对接的api为https://api.345673.xyz/get_data
 和ymyuuu/IPDB的反代ip

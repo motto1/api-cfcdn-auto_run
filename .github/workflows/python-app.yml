@@ -1,0 +1,26 @@
+name: Deploy Python Script
+
+on:
+  schedule:
+    - cron: '*/16 * * * *'  # 每天 UTC 时间的 0:00 执行一次，你可以根据需要调整 cron 表达式
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'  # 选择你需要的 Python 版本
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests urllib3
+
+      - name: Run Python script
+        run: python api-cfcdn/proxytext.py  # 替换为你的 Python 脚本的路径

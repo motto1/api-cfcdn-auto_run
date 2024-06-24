@@ -37,3 +37,6 @@ jobs:
         
       - name: Run Python script4
         run: python CM.py  # 替换为你的 Python 脚本的路径
+        
+      - name: Run Python script5
+        run: python bestcf.py  # 替换为你的 Python 脚本的路径

@@ -4,9 +4,9 @@ from requests.adapters import HTTPAdapter
 from requests.packages.urllib3.util.retry import Retry
 
 # Cloudflare API 参数
-api_token = "_HzyXGKwpxkk2yaGcBY0eA60_W-iIzgy7T-Q58yX"
-zone_id = "2541bc47a720a6554e1d1f4244ac57ad"
-subdomain = "bestcf.2116666.xyz"  # 您的二级域名
+api_token = ""
+zone_id = ""
+subdomain = ""  # 您的二级域名
 
 # Cloudflare API 端点
 api_url = f"https://api.cloudflare.com/client/v4/zones/{zone_id}/dns_records"

@@ -24,4 +24,4 @@ jobs:
           pip install requests urllib3
 
       - name: Run Python script
-        run: python api-cfcdn/proxytext.py  # 替换为你的 Python 脚本的路径
+        run: python proxytext.py  # 替换为你的 Python 脚本的路径

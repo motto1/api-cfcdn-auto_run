@@ -1,27 +1,8 @@
 name: Deploy Python Script
 
 on:
-  workflow_dispatch:
-    inputs:
-      logLevel:
-        description: 'Log level'
-        required: true
-        default: 'warning'
-        type: choice
-        options:
-        - info
-        - warning
-        - debug
-      tags:
-        description: 'Test scenario tags'
-        required: false
-        type: boolean
-      environment:
-        description: 'Environment to run tests against'
-        type: environment
-        required: true
   schedule:
-    - cron: '*/16 * * * *'  # 每天 UTC 时间的 0:00 执行一次，你可以根据需要调整 cron 表达式
+    - cron: '*/5 * * * *'  # 每天 UTC 时间的 0:00 执行一次，你可以根据需要调整 cron 表达式
 
 jobs:
   deploy:

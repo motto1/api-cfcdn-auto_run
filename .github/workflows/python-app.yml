@@ -1,6 +1,9 @@
 name: Deploy Python Script
 
 on:
+  push:
+    branches: 
+      - master
   workflow_dispatch: # Putting here is also fine!!
   schedule:
     - cron: '*/6 * * * *'  # 每天 UTC 时间的 0:00 执行一次，你可以根据需要调整 cron 表达式

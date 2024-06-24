@@ -26,5 +26,14 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests urllib3
 
-      - name: Run Python script
+      - name: Run Python script1
         run: python proxytext.py  # 替换为你的 Python 脚本的路径
+        
+      - name: Run Python script2
+        run: python CT.py  # 替换为你的 Python 脚本的路径
+        
+      - name: Run Python script3
+        run: python CU.py  # 替换为你的 Python 脚本的路径
+        
+      - name: Run Python script4
+        run: python CM.py  # 替换为你的 Python 脚本的路径
